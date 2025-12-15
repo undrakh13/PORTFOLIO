@@ -4,25 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script></head>
-<body>
-    <div class="w-[100vw] h-[600vh] bg-red-200">
-        <div class="w-[100vw] h-[100vh]  flex  flex-col  relative items-center ">
-             <img src="red.jpg" class="h-[100vh] w-[100vw] object-cover absolute" alt=""> 
-             <div class= "  w-[80vw] h-[7vh] opacity-50 bg-black  rounded-[20px] text-white flex justify-around items-center absolute">
-                <p class="hover:text-[#9e2a2b]" >Home</p>
-                <p class="hover:text-[#9e2a2b]">About me</p>
-                <p class="hover:text-[#9e2a2b]"> Projects</p>
-                <p class="hover:text-[#9e2a2b]">Contact</p>
-            </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
 
-            
-            <h1 class="absolute text-[#fdf0d5] flex pt-45 text-9xl font-bold"> PERSONAL <br>PORTFOLIO</h1>
+<body >
+    <div class="w-[100vw] h-[350vh] ">
+        
+        <div id="home" class="w-[100vw] h-[100vh]  flex  flex-col  relative items-center ">
+               <img src="red.jpg" class="h-[100vh] w-[100vw] object-cover absolute flex align-items " alt=""> 
+               <h1 class="  align-items flex text-[#fdf0d5] text-9xl font-bold mt-40 text-center z-10">  PERSONAL <br> PORTFOLIO</h1>
+            <div class="fixed top-0  w-full z-50 h-[7vh] flex justify-center">
+               <div class="w-[80vw] h-[7vh] opacity-50 bg-black rounded-[20px] text-white flex justify-around items-center ">
+                   <a href="#home" class="hover:text-[#9e2a2b]">Home</a>
+                   <a href="#about" class="hover:text-[#9e2a2b]">About me</a>
+                   <a href="#leisure" class="hover:text-[#9e2a2b]">Leisure time</a>
+                   <a href="#contact" class="hover:text-[#9e2a2b]">Contact</a>
+               </div>
+            </div>
         </div>
-        <div class="w-[100vw] h-[100vh] bg-purple-500">
-              <img src="girrl.jpg" class="w-[100vw] h-[100vh]">
+        
+        <div>
+             <div id="about" class="w-[100vw] h-[100vh] flex  flex-col  relative ">
+                <img src="red.jpg" class="h-[100vh] w-[100vw] object-cover absolute  " alt="">
+                <div class="w-[100vw] h-[100vh]  flex   relative   mt-30 ">
+                    <div class="flex flex-col text-[#fdf0d5] ml-35 m-10 gap-10 align-items"> 
+                        <h1 class=" flex text-6xl font-bold   z-0">HELLO, I'M <br>UNDRAKHNARAN <br> MUNKHBAYAR </h1>    
+                        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>  Fugit ipsa sed, natus architecto est quas aperiam obcaecati vero <br> cupiditate nulla tempora <br> reiciendis doloribus nostrum explicabo minus ipsam error impedit consequatur!</p>
+                    </div>
+                    <img src="GIRL.jpg" class="h-[70vh] w-[30vw] rounded-[20px]" alt="">   
+                </div>
+            </div>       
         </div>
+
+        <div id="leisure" class=" flex flex-col  relative ">
+                <img src="red.jpg" class=" flex justify-center h-[100vh] w-[100vw] object-cover absolute  " alt="">
+                <div class=" justify-center mt-20 text-[#fdf0d5] relative  flex   ">
+                    <div class=" gap-4 flex  flex-col ">
+                        <div class="flex gap-4 ">
+                            <img src="camera.jpg" class="h-[30vh] w-[20vw]  rounded-[20px] " alt="">   
+                            <img src="cooking.jpg" class="h-[30vh] w-[20vw]  rounded-[20px] " alt="">
+                            <img src="money.jpg" class="h-[30vh] w-[20vw]  rounded-[20px] " alt="">   
+                        </div>
+                        <div class=" flex gap-4 ">
+                            <img src="flight.jpg" class="h-[30vh] w-[20vw]  rounded-[20px] " alt="">   
+                            <img src="family.jpg" class="h-[30vh] w-[20vw]  rounded-[20px] " alt="">   
+                            <img src="coding.jpg" class="h-[30vh] w-[20vw]  rounded-[20px] " alt="">   
+                        </div>
+                    </div>
+                <p>“In my leisure time, I enjoy photography, cooking, shopping, travelling, coding, and spending quality time with my family. These activities bring me joy, balance, and fulfillment.”</p>
+                </div>
+        </div>
+
+        <div id="contact" class="w-[100vw] " >
+                <img src="reed.jpg" class=" w-[100vw] object-cover" alt="">
+                <div class=" h-[50vh] w-[100vw] bg-black  "></div>
+        </div>
+
     </div>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(a =>
+        a.onclick = e => (
+          e.preventDefault(),
+          document.querySelector(a.getAttribute('href'))
+            .scrollIntoView({ behavior: 'smooth' })
+      )
+    );
+    </script>
 </body>
 </html>
 <!-- #fdf0d5 -->
