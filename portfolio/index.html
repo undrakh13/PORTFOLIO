@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body >
@@ -27,7 +29,7 @@
              <div id="about" class="w-[100vw] h-[100vh] flex  flex-col  relative ">
                 <img src="red.jpg" class="h-[100vh] w-[100vw] object-cover absolute  " alt="">
                 <div class="w-[100vw] h-[100vh]  flex   relative   mt-30 ">
-                    <div class="flex flex-col text-[#fdf0d5] ml-35 m-10 gap-10 align-items"> 
+                    <div class="flex flex-col text-[#fdf0d5] ml-35 m-10 gap-10 items-center"> 
                         <h1 class=" flex text-6xl font-bold   z-0">HELLO, I'M <br>UNDRAKHNARAN <br> MUNKHBAYAR </h1>    
                         <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>  Fugit ipsa sed, natus architecto est quas aperiam obcaecati vero <br> cupiditate nulla tempora <br> reiciendis doloribus nostrum explicabo minus ipsam error impedit consequatur!</p>
                     </div>
@@ -36,9 +38,9 @@
             </div>       
         </div>
 
-        <div id="leisure" class=" flex flex-col  relative ">
-                <img src="red.jpg" class=" flex justify-center h-[100vh] w-[100vw] object-cover absolute  " alt="">
-                <div class=" justify-center mt-20 text-[#fdf0d5] relative  flex   ">
+        <div id="leisure" class=" flex  relative items-center justify-center ">
+                <img src="red.jpg" class=" flex h-[100vh] w-[100vw] object-cover absolute  " alt="">
+                <div class=" mt-20 text-[#fdf0d5] relative gap-5 flex flex-col items-center justify-center">
                     <div class=" gap-4 flex  flex-col ">
                         <div class="flex gap-4 ">
                             <img src="camera.jpg" class="h-[30vh] w-[20vw]  rounded-[20px] " alt="">   
@@ -51,14 +53,33 @@
                             <img src="coding.jpg" class="h-[30vh] w-[20vw]  rounded-[20px] " alt="">   
                         </div>
                     </div>
-                <p>“In my leisure time, I enjoy photography, cooking, shopping, travelling, coding, and spending quality time with my family. These activities bring me joy, balance, and fulfillment.”</p>
+                        <p class="text-center">In my leisure time, I enjoy photography, cooking, shopping, travelling, coding, and spending quality time with my family. <br>These activities bring me joy, balance, and fulfillment.”</p>
                 </div>
         </div>
 
-        <div id="contact" class="w-[100vw] " >
-                <img src="reed.jpg" class=" w-[100vw] object-cover" alt="">
-                <div class=" h-[50vh] w-[100vw] bg-black  "></div>
+        <div id="contact" class="w-[100vw] h-[60vh] flex flex-col items-center justify-center relative">
+            <img src="reed.jpg" class="absolute top-0 left-0 w-full object-cover z-0" alt="">
+            <h1 class="text-[#fdf0d5] text-6xl font-bold text-center relative z-10 ">CONTACT ME</h1>
+            <div class="flex gap-8 mt-6 relative z-10 text-2xl">
+                <div class="flex items-center gap-2">
+                   <i class="fa-solid fa-phone text-[#fdf0d5]"></i>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-brands fa-instagram text-[#fdf0d5]"></i>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-brands fa-facebook text-[#fdf0d5]"></i>
+                </div>
+            </div>
+
+            <div class="flex justify-between w-[60vw] mt-10 z-10 text-white">
+                <a class="hover:text-[#9e2a2b]" href="https://www.mobicom.mn/">+976 9999 9999</a>
+                <a class="hover:text-[#9e2a2b]" href="https://workspace.google.com/intl/en-US/gmail/">email@gmail.com</a>
+                <a class="hover:text-[#9e2a2b]" href="https://www.instagram.com/">instagram.com/username</a>
+                <a class="hover:text-[#9e2a2b]" href=" https://www.facebook.com/">facebook.com/username</a>
+            </div>
         </div>
+        
 
     </div>
 
@@ -73,4 +94,4 @@
     </script>
 </body>
 </html>
-<!-- #fdf0d5 -->
+<!-- #fdf0d5 --> 
